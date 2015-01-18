@@ -86,7 +86,7 @@ header h2 {
 
 #container {
   min-height: 595px;
-  background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
+  background: transparent url(../images/highlight-bg.jpg) 0% 0 no-repeat;
 }
 
 .inner {
@@ -314,16 +314,16 @@ footer {
   padding-top: 20px;
   padding-bottom: 30px;
   margin-top: 40px;
-  font-size: 13px;
-  color: #aaa;
+  font-size: 16px;
+  color: #666;
   background: transparent url('../images/hr.png') 0 0 no-repeat;
 }
 
 footer a {
-  color: #666;
+  color: #aaa;
 }
 footer a:hover {
-  color: #444;
+  color: #aaa;
 }
 
 /* MISC */
