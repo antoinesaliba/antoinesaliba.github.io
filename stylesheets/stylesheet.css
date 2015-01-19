@@ -70,7 +70,7 @@ header {
 
 header h1 {
   font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
-  font-size: 48px; font-weight: 900;
+  font-size: 30px; font-weight: 900;
   line-height: 1.2;
   color: #303030;
   letter-spacing: -1px;
@@ -86,7 +86,7 @@ header h2 {
 
 #container {
   min-height: 595px;
-  background: transparent url(../images/highlight-bg.jpg) 0% 0 no-repeat;
+  background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
 }
 
 .inner {
@@ -159,7 +159,7 @@ a.button span {
   background: transparent url(../images/tar-gz-icon.png) 12px 50% no-repeat;
 }
 #view-on-github span {
-  background: transparent url(../images/octocat-icon.png) 12px 50% no-repeat;
+  background: transparent url(../images/octocat-icon.png) 10px 50% no-repeat;
 }
 #view-on-github {
   margin-right: 0;
@@ -311,19 +311,33 @@ dl dt {
 }
 
 footer {
-  padding-top: 20px;
+  text-align: center;
   padding-bottom: 30px;
-  margin-top: 40px;
+  margin-top: 30px;
   font-size: 16px;
   color: #666;
   background: transparent url('../images/hr.png') 0 0 no-repeat;
 }
 
 footer a {
-  color: #aaa;
+  color: #111;
 }
 footer a:hover {
-  color: #aaa;
+  color: #2a7ae2;
+}
+
+.icon{
+    height:60px;
+}
+
+#linkedin:hover{
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+
+#github:hover{
+    opacity: 0.8;
+    filter: alpha(opacity=80); 
 }
 
 /* MISC */
