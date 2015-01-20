@@ -57,15 +57,15 @@ body {
 }
 
 a {
-  color: #d5000d;
+  color: #303030;
 }
 a:hover {
-  color: #c5000c;
+  color: #2a7ae2;
 }
 
 header {
   padding-top: 35px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 
 header h1 {
@@ -73,7 +73,10 @@ header h1 {
   font-size: 30px; font-weight: 900;
   line-height: 1.2;
   color: #303030;
+  float: :left;
   letter-spacing: -1px;
+  display: inline-block;
+  padding-right: 80px;
 }
 
 header h2 {
@@ -99,7 +102,9 @@ header h2 {
 }
 
 #downloads {
-  margin-bottom: 40px;
+    margin-top: -6px;
+    float:right;
+    padding-right: 20px;
 }
 
 a.button {
@@ -363,8 +368,7 @@ footer a:hover {
 
 /* MISC */
 .clearfix:after {
-  display: block;
-  height: 0;
+  height: 300px;
   clear: both;
   visibility: hidden;
   content: '.';
@@ -390,7 +394,7 @@ footer a:hover {
     padding-bottom: 10px;
   }
   #downloads {
-    margin-bottom: 25px;
+    margin-bottom: 0px;
   }
   #download-zip, #download-tar-gz {
     display: none;
