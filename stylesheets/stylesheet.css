@@ -88,6 +88,7 @@ header h2 {
 
 #container {
   min-height: 595px;
+  margin: inherit;
   background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
 }
 
@@ -99,13 +100,18 @@ header h2 {
 }
 
 
+
+
 #titlebox{
     margin-bottom: -30px;
 }
+
 #main_content{
     width: 620px;
-    margin: auto;
+    margin-left: auto ;
+    margin-right: auto ;
     padding-top: 25px;
+    padding-bottom: 40px;
 }
 
 .image {
@@ -123,6 +129,17 @@ header h2 {
 .title{
     font-size: 20px;
     color: #303030;
+}
+
+#classes{
+    width: 800px;
+    margin: auto;
+}
+
+.courses{
+    text-align:left; 
+    border:0;
+    margin-bottom: 1px;
 }
 
 #container .inner img {
