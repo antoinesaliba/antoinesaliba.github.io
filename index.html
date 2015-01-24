@@ -10,16 +10,35 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script type="text/javascript">
-    function beginTheTest()<!--function that is called when the "Click here to begin the test" link is clicked and changes which parts of the html file are display and which are not-->
-    {
-      var introduction = document.getElementById("intro");
-      var theTest = document.getElementById("main_content");
+    <script src="http://yui.yahooapis.com/3.8.0/build/yui/yui-min.js"></script>
+      <script> 
+    function beginTheTest() {
+	YUI().use('transition', function(Y) {
 
-      introduction.style.display = "none";
-      theTest.style.display = "block";
-    }
-    </script>
+		// Shrink to nothing.
+		Y.one('#intro').transition({
+			duration : 1.0, // seconds
+			easing : 'ease-out', // CSS syntax
+
+			left : {
+				delay : 0, // TODO: change to 1
+				duration : 0.5,
+				easing : 'ease-in',
+				value : '150px'
+			},
+
+			opacity : {
+				delay : 0,
+				duration : 0.25,
+				value : 0
+			}
+		}, function() {
+			this.remove();
+			Y.one('#main_content').show(true);
+		});
+	});
+}
+      </script>
     <title>Antoine Saliba</title>
   </head>
 
@@ -30,8 +49,8 @@
         <header class="inner">
             <div id="titlebox">
                  <ul id="title-info">
-                     <li> <a href="javascript:beginTheTest();">Portfolio</a></li>
-                     <li><a href="https://antoinesaliba.github.io"><h1>Antoine Saliba</h1></a></li>
+                     <li> <a href="javascript:void(0);" onclick="beginTheTest()">Portfolio</a></li>
+                     <li> <a href="https://antoinesaliba.github.io"><h1>Antoine Saliba</h1></a></li>
                      <li> <a target="_blank" href="https://cdn.rawgit.com/antoinesaliba/antoinesaliba.github.io/master/docs/Resume.pdf">Resume</a></li>
                  </ul>
             </div>
@@ -48,7 +67,7 @@
             </div>
         </section>
           
-        <section id="main_content">
+        <section id="main_content" style="display: none;">
           <h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to my webpage</h3>
 
@@ -93,5 +112,23 @@ $ git checkout gh-pages
         </footer>       
       </div>
     </div>
+      <script id="jsbin-javascript">
+    YUI().use('transition', function (Y) {
+      var introduction = Y.one('#introduction'),
+      test = Y.one('#theTest');
+  
+      Y.one('#startTest').on('click', function (e) {
+      e.preventDefault();
+    
+      introduction.transition({
+        width: 0,
+        height: 0
+      });
+      test.setStyle('display', 'block').transition({
+        opacity: 1
+      });
+    });
+  });
+</script>
   </body>
 </html>
