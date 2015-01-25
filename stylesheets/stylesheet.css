@@ -119,11 +119,13 @@ header h2 {
 }
 .image .text {
     position:absolute;
-    top:10px;
-    left:10px;
-    width:300px;
+    top:160px;
+    left:350px;
     color: white;   
-    font-size: 60px;
+}
+
+#picture-text{
+    font-size: 80px;
 }
 
 .title{
@@ -132,13 +134,11 @@ header h2 {
 }
 
 #classes{
-    width: 800px;
     margin: auto;
+    font-size: 16px;
 }
 
-.courses{
-    text-align:left; 
-    border:0;
+.courses{ 
     margin-bottom: 1px;
 }
 
