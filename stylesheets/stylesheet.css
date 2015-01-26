@@ -121,12 +121,18 @@ header h2 {
 }
 .image .text {
     position:absolute;
-    margin-top: -550px;;
-    width: 70%;
-    left:20%;
+    margin-top: -585px;;
+    width: 62%;
+    left:23%;
     padding-right: 20px;
     color: white; 
     font-family: Courier;
+}
+
+#person{
+    text-align: right;
+    line-height: 100px;
+    padding-right: 100px;
 }
 
 #picture-text{
